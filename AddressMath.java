@@ -50,9 +50,8 @@ public class AddressMath {
 		
 		//compares each element in array list to find and print longest word
 		String longestWord = addressWords.get(0);
-		for (int i=0; i < addressWords.size(); i++)
+		for (String currentWord : addressWords)
 		{
-			String currentWord = addressWords.get(i);
 			if (currentWord.length() > longestWord.length())
 				longestWord = currentWord;
 		}
