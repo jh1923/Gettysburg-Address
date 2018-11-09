@@ -32,14 +32,14 @@ public class AddressMath {
 					addressWords.set(i, currentWord.substring(0, n));
 				}
 				
-				//accounts for hyphens
+				//accounts for hyphens and separates words
 				if (currentWord.charAt(n)=='-' && currentWord.charAt(n+1)!='-')
 				{
 					addressWords.set(i, currentWord.substring(0, n));
 					addressWords.add(i+1, currentWord.substring(n+1));
 				}
 				
-				//accounts for em dashes i.e. double hyphens
+				//accounts for em dashes i.e. double hyphens and separates words
 				else if (currentWord.charAt(n)=='-' && currentWord.charAt(n+1)=='-')
 				{
 					addressWords.set(i, currentWord.substring(0, n));
